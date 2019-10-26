@@ -1,0 +1,78 @@
+/* ------------------------- */
+/* DATOS GENERALES */
+/* ------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------- */
+/* VARIABLES */
+/* ------------------------- */
+
+:root {
+    --color-bg      :#ecfcff;
+    --color-btn_tx  :#3e64ff;
+    --color-text    :#484c7f;
+    --color-hover   :#613eff;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;   
+    background-color: var(--color-bg); 
+}
+
+/* ------------------------- */
+/* HEADER */
+/* ------------------------- */
+
+.container {
+    text-align: center;
+    height: 97vh;
+}
+
+.container .cg-svg {
+    width: 6rem;
+    margin: 1rem;
+}
+
+.container .error-page {
+    color: var(--color-btn_tx);
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.container .error-404 {
+    color: var(--color-text);
+    font-size: 18px;
+}
+
+.container .s-small {
+    font-size: 18px;
+    padding-bottom: 2.5rem;
+}
+
+.container .e404 {
+    width: 80vh;
+    font-size: 160px; 
+}
+
+.container .btn {
+    text-decoration: none;
+    background: var(--color-btn_tx);
+    color: #ecfcff;
+    margin: 15px;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 15px;
+    transition: .5s;
+}
+
+.container a:hover {
+    background-color: var(--color-hover);
+}
