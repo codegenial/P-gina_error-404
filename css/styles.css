@@ -12,10 +12,11 @@
 /* ------------------------- */
 
 :root {
-    --color-bg      :#ecfcff;
-    --color-btn_tx  :#3e64ff;
-    --color-text    :#484c7f;
-    --color-hover   :#613eff;
+    --color-bg      :#e3e7f1;
+    --color-alt     :#494ca2;
+    --color-text    :#7077e6;
+    --color-hover   :#3f428f;
+    --color-box     :rgb(27, 27, 51, 0.5);
 }
 
 body {
@@ -33,7 +34,7 @@ body {
 
 .container {
     text-align: center;
-    height: 97vh;
+    height: 99vh;
 }
 
 .container .cg-svg {
@@ -42,14 +43,15 @@ body {
 }
 
 .container .error-page {
-    color: var(--color-btn_tx);
+    color: var(--color-alt);
     font-size: 3rem;
     margin-bottom: 1.5rem;
 }
 
 .container .error-404 {
     color: var(--color-text);
-    font-size: 18px;
+    font-size: 1.2rem;    
+    font-weight: 100;
 }
 
 .container .s-small {
@@ -64,15 +66,17 @@ body {
 
 .container .btn {
     text-decoration: none;
-    background: var(--color-btn_tx);
-    color: #ecfcff;
+    background: var(--color-alt);
+    color: var(--color-bg);
     margin: 15px;
     padding: 12px 24px;
     border-radius: 4px;
     font-size: 15px;
-    transition: .5s;
+    /* transition: .5s; */
 }
 
 .container a:hover {
-    background-color: var(--color-hover);
+    /* background-color: var(--color-hover); */
+    
+    box-shadow: 0 1px 3px 1px var(--color-box);
 }
